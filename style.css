@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap");
+/* 
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Bellefair', serif; 
+*/
+header {
+  padding-top: 40px;
+  padding-left: 55px;
+  position: relative;
+}
+
+.container-main {
+  position: relative;
+  top: 27.77vh;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 165px;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-row hr {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  width: 32.84722222222222vw;
+  position: absolute;
+  left: 167px;
+}
+
+.header-row nav {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+  width: 57.6388vw;
+  height: 10.66vh;
+  padding-right: 11.45833vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  white-space: nowrap;
+}
+
+.header-row nav a {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+  margin-left: 12px;
+}
+
+.nav-button-number {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #ffffff;
+}
+
+/* main */
+
+.main-text {
+  max-width: 450px;
+}
+
+.main-text h5 {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: 4.725px;
+  color: #d0d6f9;
+}
+
+.main-text h1 {
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 150px;
+  line-height: 172px;
+  color: #ffffff;
+  margin: 24px 0;
+  text-transform: uppercase;
+}
+
+.main-text p {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #d0d6f9;
+}
+
+.explore-button button {
+  border: 0;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 37px;
+  letter-spacing: 2px;
+  color: #0b0d17;
+  width: 274px;
+  height: 274px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.5s;
+  text-transform: uppercase;
+}
+
+.explore-button button:hover {
+  opacity: 0.3;
+}
