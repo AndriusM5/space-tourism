@@ -33,7 +33,7 @@ header {
   left: 167px;
 }
 
-.header-row nav {
+.header-row ul {
   background: rgba(255, 255, 255, 0.04);
   backdrop-filter: blur(40.7742px);
   width: 57.6388vw;
@@ -45,7 +45,7 @@ header {
   white-space: nowrap;
 }
 
-.header-row nav a {
+.header-row ul a {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
@@ -102,7 +102,7 @@ header {
   color: #d0d6f9;
 }
 
-.explore-button button {
+.explore-button input {
   border: 0;
   font-family: "Bellefair";
   font-style: normal;
@@ -119,6 +119,6 @@ header {
   text-transform: uppercase;
 }
 
-.explore-button button:hover {
+.explore-button input:hover {
   opacity: 0.3;
 }
