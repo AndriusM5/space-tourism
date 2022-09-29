@@ -45,7 +45,20 @@ header {
   white-space: nowrap;
 }
 
+.header-row ul li {
+  padding: 40px 0;
+}
+
+.header-row ul li:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, .5);
+}
+
+.nav-btn-active {
+  border-bottom: 3px solid white;
+}
+
 .header-row ul a {
+  text-transform: uppercase;
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;

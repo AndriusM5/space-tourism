@@ -1,32 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Space tourism website</title>
+    <style>
+      @media only screen and (min-width: 375px) {
+        body {
+          background: url("./assets/home/background-home-mobile.jpg");
+          background-size: cover;
+          height: 100vh;
+        }
+      }
+      @media only screen and (min-width: 768px) {
+        body {
+          background: url("./assets/home/background-home-tablet.jpg");
+          background-size: cover;
+          height: 100vh;
+        }
+      }
+      @media only screen and (min-width: 1280px) {
+        body {
+          background: url("./assets/home/background-home-desktop.jpg");
+          background-size: cover;
+          height: 100vh;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-row">
+        <img src="./assets/shared/logo.svg" alt="Logo icon" />
+        <hr />
+        <div class="nav-links" id="nav-links">
+          <ul>
+            <li id="home-nav-btn">
+              <a href="index.html"
+                ><span class="nav-button-number">00</span> Home</a
+              >
+            </li>
+            <li id="dest-nav-btn">
+              <a href="destination.html"
+                ><span class="nav-button-number">01</span> Destination</a
+              >
+            </li>
+            <li id="crew-nav-btn">
+              <a href="crew.html"
+                ><span class="nav-button-number">02</span> Crew</a
+              >
+            </li>
+            <li id="tech-nav-btn">
+              <a href="technology.html"
+                ><span class="nav-button-number">03</span> Technology</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Space tourism website</title>
-</head>
-<body>
-
-  00 Home
-  01 Destination
-  02 Crew
-  03 Technology
-
-  03 Space launch 101
-
-  1
-  2
-  3
-
-  The terminology...
-  Launch vehicle
-
-  A launch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a 
-  payload from Earth's surface to space, usually to Earth orbit or beyond. Our 
-  WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, 
-  it's quite an awe-inspiring sight on the launch pad!
-</body>
+    <main>
+      <div class="container-main">
+        <div class="main-text">
+          <h5>SO, YOU WANT TO TRAVEL TO</h5>
+          <h1>Space</h1>
+          <p>
+            Let’s face it; if you want to go to space, you might as well
+            genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this
+            world experience!
+          </p>
+        </div>
+        <form class="explore-button" action="destination.html">
+          <input type="submit" value="Explore" />
+        </form>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>
