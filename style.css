@@ -47,10 +47,11 @@ header {
 
 .header-row ul li {
   padding: 40px 0;
+  height: 96px;
 }
 
 .header-row ul li:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, .5);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
 
 .nav-btn-active {
@@ -127,11 +128,32 @@ header {
   width: 274px;
   height: 274px;
   border-radius: 50%;
-  cursor: pointer;
-  transition: 0.5s;
   text-transform: uppercase;
+  z-index: 1;
 }
 
-.explore-button input:hover {
-  opacity: 0.3;
+.explore-button {
+  position: relative;
+    cursor: pointer;
+}
+
+.explore-button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  background-color: #fff;
+  height: 450px;
+  width: 450px;
+  opacity: 0%;
+  border-radius: 50%;
+  z-index: 0;
+  transition: 0.5s;
+  transform: translate(-19.555%, -19.555%);
+}
+
+.explore-button:hover::before {
+  opacity: 30%;
 }
