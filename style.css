@@ -75,7 +75,7 @@ header {
   background: #ffffff;
   mix-blend-mode: normal;
   opacity: 0.25;
-  width: 32.84722222222222vw;
+  width: 32.84722vw;
   position: absolute;
   left: 167px;
 }
@@ -173,7 +173,7 @@ header {
 
 .container-dest {
   position: relative;
-  top: 27.77vh;
+  top: 8.44vh;
   margin: 0 auto;
   padding: 0 165px;
   justify-content: space-around;
@@ -184,6 +184,12 @@ header {
 
 .container-dest h5 {
   color: #ffffff;
+  margin-bottom: 97px;
+  text-transform: uppercase;
+}
+
+.container-dest h5 span {
+  margin-right: 0.75rem;
 }
 
 .dest-row,
@@ -191,11 +197,46 @@ header {
 .dest-bottom-text {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 
 .dest-line {
   border: 1px #383b4b solid;
+  margin: 54px 0 28px;
 }
+
+.dest-row {
+  margin: 0 auto;
+  gap: 10.90277vw;
+}
+
+.dest-text {
+  max-width: 445px;
+}
+
+.planet-name {
+  margin: 37px 0 14px;
+}
+
+.dest-bottom-text {
+  gap: 79px;
+}
+
+#planet-desc {
+  height: 14.22vh;
+}
+
+.moon-btn {
+  border-bottom: 3px solid white;
+}
+
+.distance,
+.travel-time {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
 .dest-bottom-text-row2 {
   color: #ffffff;
   font-family: "Bellefair";
@@ -204,6 +245,7 @@ header {
   font-size: 28px;
   line-height: 32px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .dest-bottom-text-row1 {
@@ -211,4 +253,26 @@ header {
   line-height: 17px;
   letter-spacing: 2.3625px;
   text-transform: uppercase;
+}
+
+.planet-navbar-active {
+  border-bottom: 3px solid white;
+  color: #ffffff;
+}
+
+.dest-links ul {
+  font-family: "Barlow Condensed";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  text-transform: uppercase;
+  gap: 2rem;
+  cursor: pointer;
+}
+
+.dest-links ul li:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }

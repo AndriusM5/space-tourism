@@ -72,18 +72,18 @@
       <div class="container-dest">
         <h5><span>01</span>Pick your destination</h5>
         <div class="dest-row">
-          <img src="./assets/destination/image-moon.png" alt="Moon picture" />
+          <img id="planet-picture" src="./assets/destination/image-moon.png" alt="Moon picture" />
           <div class="dest-text">
             <div class="dest-links">
               <ul>
-                <li id="home-nav-btn">Moon</li>
-                <li id="dest-nav-btn">Mars</li>
-                <li id="crew-nav-btn">Europa</li>
-                <li id="tech-nav-btn">Titan</li>
+                <li class="moon-btn" id="moon-btn">Moon</li>
+                <li id="mars-btn">Mars</li>
+                <li id="europa-btn">Europa</li>
+                <li id="titan-btn">Titan</li>
               </ul>
             </div>
-            <h2 class="planet-name">Moon</h2>
-            <p>
+            <h2 id="planet-name" class="planet-name">Moon</h2>
+            <p id="planet-desc">
               See our planet as you’ve never seen it before. A perfect relaxing
               trip away to help regain perspective and come back refreshed.
               While you’re there, take in some history by visiting the Luna 2
@@ -93,11 +93,11 @@
             <div class="dest-bottom-text">
               <div class="distance">
                 <p class="dest-bottom-text-row1">AVG. DISTANCE</p>
-                <p class="dest-bottom-text-row2">384,400 km</p>
+                <p id="planet-dis" class="dest-bottom-text-row2">384,400 km</p>
               </div>
                <div class="travel-time">
                 <p class="dest-bottom-text-row1">Est. travel time</p>
-                <p class="dest-bottom-text-row2">3 days</p>
+                <p id="planet-time" class="dest-bottom-text-row2">3 days</p>
               </div>
             </div>
           </div>
