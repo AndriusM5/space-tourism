@@ -3,6 +3,7 @@
 font-family: 'Barlow Condensed', sans-serif;
 font-family: 'Bellefair', serif; 
 */
+
 h1 {
   font-family: "Bellefair";
   font-style: normal;
@@ -193,7 +194,7 @@ header {
 }
 
 .dest-row,
-.dest-links ul,
+.dest-links,
 .dest-bottom-text {
   display: flex;
   flex-direction: row;
@@ -260,7 +261,7 @@ header {
   color: #ffffff;
 }
 
-.dest-links ul {
+.dest-links {
   font-family: "Barlow Condensed";
   font-style: normal;
   font-weight: 400;
@@ -273,6 +274,6 @@ header {
   cursor: pointer;
 }
 
-.dest-links ul li:hover {
+.dest-links li:hover {
   border-bottom: 3px solid rgba(255, 255, 255, 0.5);
 }
