@@ -133,7 +133,9 @@ header {
   max-width: 450px;
 }
 
-.explore-button button {
+.explore-button {
+  position: relative;
+  cursor: pointer;
   border: 0;
   font-family: "Bellefair";
   font-style: normal;
@@ -148,12 +150,9 @@ header {
   text-transform: uppercase;
 }
 
-.explore-button {
-  position: relative;
-  cursor: pointer;
-}
-
 .explore-button::before {
+  top: 0;
+  left: 0;
   position: absolute;
   content: "";
   background-color: #fff;
@@ -163,6 +162,7 @@ header {
   border-radius: 50%;
   transition: 0.5s;
   transform: translate(-19.555%, -19.555%);
+  z-index: 0;
 }
 
 .explore-button:hover::before {
