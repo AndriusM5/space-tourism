@@ -23,16 +23,15 @@ function crewData(crewId) {
   role.innerHTML = myJson.crew[crewId].role;
 }
 
-
-window.addEventListener("load", crewFunc);
+window.addEventListener("click", crewFunc);
 function crewFunc() {
-  if ((radioBtn1.checked == true)) {
+  if (radioBtn1.checked) {
     crewData(0);
-  } else if ((radioBtn2.checked == true)) {
+  } else if (radioBtn2.checked) {
     crewData(1);
-  } else if ((radioBtn3.checked == true)) {
+  } else if (radioBtn3.checked) {
     crewData(2);
-  } else if ((radioBtn4.checked == true)) {
+  } else if (radioBtn4.checked) {
     crewData(3);
   }
 }
