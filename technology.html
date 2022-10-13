@@ -15,21 +15,21 @@
     <style>
       @media only screen and (min-width: 375px) {
         body {
-          background: url("./assets/home/background-home-mobile.jpg");
+          background: url("./assets/technology/background-technology-mobile.jpg");
           background-size: cover;
           height: 100vh;
         }
       }
       @media only screen and (min-width: 768px) {
         body {
-          background: url("./assets/home/background-home-tablet.jpg");
+          background: url("./assets/technology/background-technology-tablet.jpg");
           background-size: cover;
           height: 100vh;
         }
       }
       @media only screen and (min-width: 1280px) {
         body {
-          background: url("./assets/home/background-home-desktop.jpg");
+          background: url("./assets/technology/background-technology-desktop.jpg");
           background-size: cover;
           height: 100vh;
         }
@@ -69,10 +69,35 @@
     </header>
 
     <main>
-      <div class="container-main">
-      
+      <div class="container bigger">
+        <h5><span>02</span>Meet your crew</h5>
+        <div class="tech-row">
+          <div class="tech-buttons">
+            <button class="tech-active" id="techBtn1">1</button>
+            <button id="techBtn2">2</button>
+            <button id="techBtn3">3</button>
+          </div>
+          <div class="tech-text">
+            <p>THE TERMINOLOGY…</p>
+            <h3 id="techName">LAUNCH VEHICLE</h3>
+            <p id="techDesc">
+              A launch vehicle or carrier rocket is a rocket-propelled vehicle
+              used to carry a payload from Earth's surface to space, usually to
+              Earth orbit or beyond. Our WEB-X carrier rocket is the most
+              powerful in operation. Standing 150 metres tall, it's quite an
+              awe-inspiring sight on the launch pad!
+            </p>
+          </div>
+        </div>
+        <picture
+          ><img
+            id="techImg"
+            src="./assets/technology/image-launch-vehicle-portrait.jpg"
+            alt="Technology Picture"
+        /></picture>
       </div>
     </main>
     <script src="./js/header.js"></script>
+    <script type="module" src="./js/techData.js"></script>
   </body>
 </html>
