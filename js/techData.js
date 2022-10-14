@@ -19,10 +19,9 @@ function techData(techId) {
   techBtn1.classList.remove("tech-active");
   techBtn2.classList.remove("tech-active");
   techBtn3.classList.remove("tech-active");
-  techBtn1.classList.remove("techBtn1");
 }
 
-window.addEventListener("click", techFunc);
+window.addEventListener("load", techFunc);
 function techFunc() {
   techBtn1.onclick = function () {
     techData(0);

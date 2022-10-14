@@ -14,8 +14,6 @@ var crewName = document.getElementById("crewName");
 var crewBio = document.getElementById("crewBio");
 var crewImg = document.getElementById("crewImg");
 
-var radioForm = document.getElementById("radioForm");
-
 function crewData(crewId) {
   crewImg.src = myJson.crew[crewId].images.webp;
   crewName.innerHTML = myJson.crew[crewId].name;

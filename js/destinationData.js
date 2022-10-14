@@ -15,21 +15,16 @@ var moonDesc = document.getElementById("planet-desc");
 var moonDistance = document.getElementById("planet-dis");
 var estTravel = document.getElementById("planet-time");
 
-function removeAllActive() {
-  moonBtn.classList.remove("planet-navbar-active");
-  marsBtn.classList.remove("planet-navbar-active");
-  europaBtn.classList.remove("planet-navbar-active");
-  titanBtn.classList.remove("planet-navbar-active");
-  moonBtn.classList.remove("moon-btn");
-}
-
 function desData(planetId) {
   planet.src = myJson.destinations[planetId].images.webp;
   moonName.innerHTML = myJson.destinations[planetId].name;
   moonDesc.innerHTML = myJson.destinations[planetId].description;
   moonDistance.innerHTML = myJson.destinations[planetId].distance;
   estTravel.innerHTML = myJson.destinations[planetId].travel;
-  removeAllActive();
+  moonBtn.classList.remove("planet-navbar-active");
+  marsBtn.classList.remove("planet-navbar-active");
+  europaBtn.classList.remove("planet-navbar-active");
+  titanBtn.classList.remove("planet-navbar-active");
 }
 
 window.addEventListener("load", desFunc);
