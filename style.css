@@ -341,6 +341,7 @@ header {
 .tech-row {
   display: flex;
   margin-top: 40px;
+  width: 65%;
 }
 
 .tech-buttons {
@@ -390,4 +391,156 @@ header {
   position: fixed;
   right: 0;
   bottom: 11.22vh;
+  width: 35.76388vw;
+  height: 58.55vh;
+}
+
+/* tablet */
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 1200px) {
+  /* body {
+    overflow: hidden;
+  } */
+  header {
+    padding-top: 0;
+  }
+  .row.header hr {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+    top: 10vh;
+  }
+  h5 {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: center;
+  }
+  h1 {
+    line-height: 150px;
+    margin: 24px 0;
+  }
+  p {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+  }
+  .explore-button {
+    position: fixed;
+    bottom: 3vh;
+  }
+  .nav-button-number {
+    display: none;
+  }
+  .row.destination {
+    flex-direction: column;
+    gap: 0;
+  }
+  #planet-picture {
+    max-width: 300px;
+    margin-bottom: 50px;
+  }
+  .container.bigger {
+    top: 124px;
+    align-items: center;
+  }
+  .container.bigger h5 {
+    margin-bottom: 60px;
+  }
+  .dest-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .dest-text h2 {
+    font-size: 80px;
+    line-height: 92px;
+  }
+  .dest-line {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 28px;
+  }
+  #crewImg {
+    height: 48.046875vh;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .crew-text {
+    max-width: 600px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #radioForm {
+    position: relative;
+    bottom: 0;
+    margin: 40px 0;
+    gap: 16px;
+    justify-content: center;
+  }
+  #crewName {
+    white-space: nowrap;
+    font-size: 40px;
+    line-height: 46px;
+  }
+  #crewRole {
+    white-space: nowrap;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #crewBio {
+    max-width: 600px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .container-header {
+    position: fixed;
+    top: 136px;
+    left: 38.5px;
+  }
+  #techImg {
+    position: relative;
+    /* content: url("./assets/technology/image-launch-vehicle-landscape.jpg"); */
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  .container.bigger.tech {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  .tech-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tech-buttons {
+    flex-direction: row;
+    margin-right: 0;
+    gap: 16px;
+    margin-bottom: 44px;
+  }
+  .tech-buttons button {
+    padding: 16px 23.5px 16px 24.5px;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 1.5px;
+  }
+  .tech-text {
+    text-align: center;
+  }
+  #techName {
+    font-size: 40px;
+    line-height: 46px;
+  }
+  .container.bigger.tech picture {
+    width: 100%;
+  }
 }
