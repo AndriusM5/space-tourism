@@ -260,8 +260,17 @@ header {
 
 /* crew */
 
+.swiper {
+  overflow: visible;
+}
+
+.slider-container {
+  overflow: hidden;
+}
+
 .crew-row {
   display: flex;
+  flex-direction: column;
 }
 
 .crew-text {
@@ -286,42 +295,56 @@ header {
   max-width: 444px;
 }
 
-#crewImg {
-  position: fixed;
-  right: 15vw;
-  bottom: 0;
+.crew-row hr {
+  visibility: hidden;
 }
 
-#radioForm {
-  width: 135px;
+#crewImg {
+  position: relative;
+}
+
+.swiper-slide {
+  height: 100%;
+}
+
+.slide-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: 160px;
   height: 15px;
   position: fixed;
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   gap: 24px;
   bottom: 94px;
+  left: 167px;
 }
 
-#radioForm input[type="radio"] {
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 12px;
   position: relative;
   height: 15px;
   width: 15px;
   outline: none;
-  margin: 0;
   cursor: pointer;
-  background: rgba(255, 255, 255, 0.17);
+  background: rgba(255, 255, 255);
   border-radius: 50%;
   overflow: hidden;
   transition: border 0.5s ease;
+  white-space: nowrap;
 }
 
-#radioForm input[type="radio"]::after {
+/* .swiper-pagination-bullet::after {
   content: "";
   display: flex;
   justify-self: center;
   border-radius: 50%;
 }
-#radioForm input[type="radio"]::after {
+.swiper-pagination-bullet::after {
   position: relative;
   width: 100%;
   height: 100%;
@@ -329,12 +352,12 @@ header {
   left: var(--y, 100%);
   transition: 0.5s;
 }
-#radioForm input[type="radio"]:checked::after {
+.swiper-pagination-bullet-active::after {
   --y: 0%;
 }
-#radioForm input[type="radio"]:checked ~ input[type="radio"]::after {
+.swiper-pagination-bullet-active ~ input[type="radio"]::after {
   --y: -100%;
-}
+} */
 
 /* technology */
 
@@ -396,9 +419,6 @@ header {
 }
 
 /* tablet */
-
-@media only screen and (max-width: 768px) {
-}
 
 @media only screen and (max-width: 1200px) {
   /* body {
@@ -478,12 +498,15 @@ header {
     flex-direction: column;
     align-items: center;
   }
-  #radioForm {
+  .swiper-pagination {
     position: relative;
     bottom: 0;
     margin: 40px 0;
     gap: 16px;
     justify-content: center;
+  }
+  .slide-row {
+    align-items: center;
   }
   #crewName {
     white-space: nowrap;
@@ -507,7 +530,6 @@ header {
   }
   #techImg {
     position: relative;
-    /* content: url("./assets/technology/image-launch-vehicle-landscape.jpg"); */
     top: 0;
     width: 100%;
     height: auto;
@@ -542,5 +564,124 @@ header {
   }
   .container.bigger.tech picture {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  h5 {
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.7px;
+  }
+  h1 {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  p {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  h2 {
+    font-size: 56px;
+    line-height: 64px;
+  }
+  .toggle-hamburger {
+    background: url("./assets/shared/icon-hamburger.svg");
+    position: absolute;
+    top: 33px;
+    right: 24px;
+    width: 24px;
+    height: 21px;
+    cursor: pointer;
+    z-index: 2;
+    transition: all 0.3s ease;
+  }
+  .row.header ul {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 67.733%;
+    z-index: 1;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .nav-button-number {
+    display: block;
+  }
+  .row.header ul li a {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 0;
+  }
+  .row.header img {
+    position: fixed;
+    top: 24px;
+    left: 24px;
+  }
+  .main-text {
+    margin-top: 50px;
+    text-align: center;
+  }
+  .container {
+    padding: 0 24px;
+  }
+  #planet-picture {
+    height: 170px;
+    width: 170px;
+    margin-bottom: 26px;
+  }
+  .dest-links li {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 2.3625px;
+  }
+  .dest-bottom-text {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .container.bigger h5 {
+    position: static;
+    margin-bottom: 32px;
+  }
+  #crewImg {
+    position: relative;
+    height: 223px;
+  }
+  .crew-row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .crew-row hr {
+    visibility: visible;
+    width: 100%;
+    border: 1px #383b4b solid;
+    margin: 0;
+  }
+  #crewName {
+    white-space: unset;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+  }
+  #crewRole {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  #crewBio {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .container.bigger h5 {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }

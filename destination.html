@@ -38,11 +38,12 @@
   </head>
   <body class="destination-body">
     <header>
+      <div class="toggle-hamburger" id="toggle-hamburger"></div>
       <div class="row header">
         <img src="./assets/shared/logo.svg" alt="Logo icon" />
         <hr />
-        <div class="nav-links" id="nav-links">
-          <ul>
+        <div class="nav-links">
+          <ul id="nav-links">
             <li id="home-nav-btn">
               <a href="index.html"
                 ><span class="nav-button-number">00</span> Home</a
@@ -108,7 +109,12 @@
         </div>
       </div>
     </main>
-    <script src="./js/header.js"></script>
+    <script>
+      if (window.screen.width > 768) {
+        document.write('<script src="./js/header.js"><\/script>');
+      }
+    </script>
+    <script src="./js/hamburger.js"></script>
     <script type="module" src="./js/destinationData.js"></script>
   </body>
 </html>

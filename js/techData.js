@@ -15,9 +15,10 @@ var techImg = document.getElementById("techImg");
 var lastClickedBtnId = 0;
 
 function techData(techId) {
-  if (window.innerWidth >= 1200) {
+  var sWidth = window.innerWidth;
+  if (sWidth >= 1200) {
     techImg.src = myJson.technology[techId].images.portrait;
-  } else if (window.innerWidth >= 768) {
+  } else if (sWidth <= 768) {
     techImg.src = myJson.technology[techId].images.landscape;
   }
   techName.innerHTML = myJson.technology[techId].name;
@@ -28,7 +29,6 @@ function techData(techId) {
 }
 
 function changeImage(msg) {
-  console.log(msg + " works");
   if (window.innerWidth >= 1200) {
     techImg.setAttribute(
       "src",
@@ -40,12 +40,12 @@ function changeImage(msg) {
       myJson.technology[lastClickedBtnId].images.landscape
     );
   }
+  console.log(msg + " works");
 }
 
-window.addEventListener("resize", changeImage("Resize"));
+// window.addEventListener("resize", changeImage("Resize"));
 
-// window.onresize = changeImage("Resize");
-
+window.onresize = changeImage("Resize");
 window.onload = changeImage("Load");
 
 window.addEventListener("load", techFunc);

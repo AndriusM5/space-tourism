@@ -21,15 +21,27 @@ function crewData(crewId) {
   role.innerHTML = myJson.crew[crewId].role;
 }
 
-window.addEventListener("click", crewFunc);
-function crewFunc() {
-  if (radioBtn1.checked) {
-    crewData(0);
-  } else if (radioBtn2.checked) {
-    crewData(1);
-  } else if (radioBtn3.checked) {
-    crewData(2);
-  } else if (radioBtn4.checked) {
-    crewData(3);
-  }
-}
+// window.addEventListener("click", crewFunc);
+// function crewFunc() {
+//   if (radioBtn1.checked) {
+//     crewData(0);
+//   } else if (radioBtn2.checked) {
+//     crewData(1);
+//   } else if (radioBtn3.checked) {
+//     crewData(2);
+//   } else if (radioBtn4.checked) {
+//     crewData(3);
+//   }
+// }
+
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 200,
+  loop: true,
+  autoHeight: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    // dynamicBullets: true,
+    // dynamicMainBullets: 2,
+  },
+});
