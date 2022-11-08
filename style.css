@@ -430,10 +430,15 @@ header {
   .row.header hr {
     display: none;
   }
-  .container {
+  .container,
+  .slider-container {
     flex-direction: column;
     top: 10vh;
   }
+  .slider-container {
+    overflow-y: visible;
+  }
+
   h5 {
     font-size: 20px;
     line-height: 24px;
@@ -486,10 +491,19 @@ header {
     width: 100%;
     margin-bottom: 28px;
   }
+  .container.bigger.swiper {
+    top: 0;
+    margin-top: 124px;
+    height: 71vh;
+  }
+
   #crewImg {
     height: 48.046875vh;
     left: 50%;
     transform: translateX(-50%);
+    bottom: 0;
+    z-index: 10;
+    position: absolute;
   }
   .crew-text {
     max-width: 600px;
@@ -507,6 +521,13 @@ header {
   }
   .slide-row {
     align-items: center;
+    flex-direction: column;
+  }
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 55.859375vh;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
   }
   #crewName {
     white-space: nowrap;
@@ -594,7 +615,7 @@ header {
     width: 24px;
     height: 21px;
     cursor: pointer;
-    z-index: 2;
+    z-index: 200;
     transition: all 0.3s ease;
   }
   .row.header ul {
@@ -606,7 +627,7 @@ header {
     right: 0;
     height: 100%;
     width: 67.733%;
-    z-index: 1;
+    z-index: 100;
     justify-content: center;
     align-items: flex-start;
   }
@@ -652,11 +673,14 @@ header {
   #crewImg {
     position: relative;
     height: 223px;
+    left: 0;
+    transform: translateX(0);
   }
-  .crew-row {
+  .slide-row {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    gap: 10vh;
   }
   .crew-row hr {
     visibility: visible;
@@ -678,10 +702,15 @@ header {
     font-size: 15px;
     line-height: 25px;
   }
+  .swiper-pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 50vh;
+    position: relative;
+  }
   .container.bigger h5 {
     position: absolute;
     top: -32px;
     left: 50%;
     transform: translateX(-50%);
+    white-space: nowrap;
   }
 }

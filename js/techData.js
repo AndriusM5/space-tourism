@@ -18,7 +18,7 @@ function techData(techId) {
   var sWidth = window.innerWidth;
   if (sWidth >= 1200) {
     techImg.src = myJson.technology[techId].images.portrait;
-  } else if (sWidth <= 768) {
+  } else {
     techImg.src = myJson.technology[techId].images.landscape;
   }
   techName.innerHTML = myJson.technology[techId].name;

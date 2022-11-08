@@ -37,7 +37,7 @@ function crewData(crewId) {
 var swiper = new Swiper(".mySwiper", {
   spaceBetween: 200,
   loop: true,
-  autoHeight: true,
+  autoHeight: false,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
